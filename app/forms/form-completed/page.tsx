@@ -1,7 +1,7 @@
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Form Layout Page | Next.js volunteer cleanup form",
+  title: "Form Layout Page | Next.js completed event cleanup form",
   description: "This is Form Layout page for TailAdmin Next.js for the form submission",
   // other metadata
 };
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const FormLayout = () => {
   return (
     <>
-      <Breadcrumb pageName="Submit Clean-up Event Details" />
+      <Breadcrumb pageName="Submit a Completed Event Details" />
       <form action="#">
         <div className="flex flex-col gap-9">
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
@@ -31,24 +31,20 @@ const FormLayout = () => {
                         <label className="mb-2.5 block text-black dark:text-white">
                           Atoll
                         </label>
-                        <input
-                          type="text"
-                          id="Atoll"
-                          placeholder="Atoll"
-                          className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
-                        />
+                        <select className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary">
+                          <option value="">K</option>
+                        </select>
                       </div>
 
                       <div className="w-full xl:w-1/2">
                         <label className="mb-2.5 block text-black dark:text-white">
                           Island
                         </label>
-                        <input
-                          type="text"
-                          id="Island"
-                          placeholder="Island"
-                          className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
-                        />
+                        <select className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary">
+                          <option value="">Male</option>
+                          <option value="">Hulhumale</option>
+                          <option value="">Villimale</option>
+                        </select>
                       </div>
                     </div>
 

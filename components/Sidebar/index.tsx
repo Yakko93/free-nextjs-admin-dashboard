@@ -348,13 +348,24 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                           </li>
                           <li>
                             <Link
-                              href="/forms/form-layout"
+                              href="/forms/form-completed"
                               className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
-                                pathname === "/forms/form-layout" &&
+                                pathname === "/forms/form-completed" &&
                                 "text-white"
                               }`}
                             >
-                              Form Layout
+                              Submit Completed Event
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/forms/form-upcoming"
+                              className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
+                                pathname === "/forms/form-upcoming" &&
+                                "text-white"
+                              }`}
+                            >
+                              Submit Upcoming Event
                             </Link>
                           </li>
                         </ul>
